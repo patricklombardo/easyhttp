@@ -18,19 +18,40 @@ const http = new easyHTTP();
 //   }
 // });
 
-// Post a Post
+// // Post a Post
 const data = {
   title: "Custom Post",
   body: "This is a custom post.",
 };
 
-http.post("http://jsonplaceholder.typicode.com/posts", data, function (
-  err,
-  res
-) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(res);
-  }
-});
+// http.post("http://jsonplaceholder.typicode.com/posts", data, function (
+//   err,
+//   res
+// ) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(res);
+//   }
+// });
+
+// Update a Post (PUT)
+// http.put("http://jsonplaceholder.typicode.com/posts/5", data, function (
+//   err,
+//   post
+// ) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(post);
+//   }
+// });
+
+// Delete a Post
+// http.delete("http://jsonplaceholder.typicode.com/posts/1", function (err, res) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(res);
+//   }
+// });
